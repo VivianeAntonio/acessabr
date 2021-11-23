@@ -1,12 +1,12 @@
 import React from "react";
-import 'style';
+import './style.scss';
 import logoAcessaBr from '../../images/logo-acessabr.svg'
 import logoEbac from '../../images/logo-ebac.svg'
 
 const Header = () => {
     return(
         <header className="header__container">
-            
+
             <div className="header__logo--state">
                 <img src={logoAcessaBr} alt="Logo AcessaBR"/>
                 <span className="header__city"> 
