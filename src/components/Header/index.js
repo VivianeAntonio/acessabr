@@ -7,7 +7,7 @@ const Header = () => {
     return(
         <header className="header__container">
 
-            <div className="header__logo--state">
+            <div className="header__logo header__logo--state">
                 <img src={logoAcessaBr} alt="Logo AcessaBR"/>
                 <span className="header__city"> 
                     / São Paulo - SP 
@@ -16,7 +16,7 @@ const Header = () => {
             </div>
 
             <div className="header__logo--ebac">
-                <span>
+                <span className="header__span">
                      Apoio: 
                 </span>
                 <img src={logoEbac} alt="Logo EBAC"/>
