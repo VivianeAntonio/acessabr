@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './style.scss';
 import logoAcessaBr from '../../images/logo-acessabr.svg'
 import logoEbac from '../../images/logo-ebac.svg'
