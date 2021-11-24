@@ -4,13 +4,16 @@ import './styles/global.scss';
 import Header from './components/Header';
 import Home from './pages/Home';
 
-// jsx
+const CONFIG = {
+  state: 'SP',
+  city: 'São Paulo'
+}
 
 ReactDOM.render(
   <div className='main__wrapper'>
     <div className='main__container'>
-      <Header/>
-      <Home/>
+      <Header city={CONFIG.city} state={CONFIG.state}/>
+      <Home city={CONFIG.city}/>
 
     </div>
 
