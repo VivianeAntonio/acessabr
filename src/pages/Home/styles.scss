@@ -33,4 +33,10 @@
         }
     }
 
+    &__pills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 }
