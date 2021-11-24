@@ -1,5 +1,7 @@
-import React from "react";
+import React from 'react'
 import './styles.scss'
+import imageDestack from '../../images/imagem-destaque.png'
+import Pills from '../../components/Pills'
 
 const Home = () => {
     return (
@@ -12,6 +14,20 @@ const Home = () => {
                 <p className="home__text">
                     Checamos 10 itens essenciais de acessibilidade para pessoas com deficiência em diversos pontos da cidade.
                 </p>
+                <div className='home__pills'>
+
+                        <Pills
+                            local={item}
+                        />
+
+                </div>
+            </div>
+            <div className="home__col">
+                <div className="home__image home__image--destack">
+                    <img src={imageDestack} alt='Imagem destaque cadeirante'/>
+
+                </div>
+
             </div>
 
         </main>
