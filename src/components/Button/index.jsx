@@ -1,6 +1,6 @@
 import React from 'react'
 import './button.scss'
-import PropTypes from 'prop-type'
+import PropTypes from 'prop-types'
 
 function Button ({children, onClick, width}) {
     return (
@@ -10,7 +10,7 @@ function Button ({children, onClick, width}) {
     )
 }
 
-Button.PropTypes = {
+Button.propTypes = {
     children: PropTypes.oneOfType ([
         PropTypes.arrayOf (PropTypes.node),
         PropTypes.node

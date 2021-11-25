@@ -9,16 +9,16 @@ const Card = () => {
             <div className='card__content'>
                 <h3>Nome do local</h3>
                 <ul className='card__facilities'>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
-                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item card__facilities__item--unchecked'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
+                    <li className='card__facilities__item'></li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <Button>Como chegar</Button>
@@ -27,3 +27,5 @@ const Card = () => {
         </div>
     )
 }
+
+export default Card;
