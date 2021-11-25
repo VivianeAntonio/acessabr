@@ -7,7 +7,7 @@ import Pills from '../../components/Pills'
 const PLACES = [
     'Praça',
     'Parque',
-    'Igraja',
+    'Igreja',
     'Hotel',
     'Restaurante',
     'Zoológico',
