@@ -14,7 +14,7 @@ function CuratorItem() {
                     <h3>Viviane Antonio da Silva</h3>
                     <h6>Curadoria</h6>
                 </div>                
-                <p>Desenvolvedora fullstack formada em Análise e Desenvolvimento de Sistemas.</p>
+                <p>Desenvolvedora Fullstack formada em Análise e Desenvolvimento de Sistemas.</p>
             </div>
         </div>
     )
