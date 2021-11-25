@@ -1,0 +1,25 @@
+.card {
+    width: 100%;
+    max-width: 222px;
+    
+
+    &__container {
+
+    }
+
+    &__image {
+        border: 1px solid var(--lightGreen);
+        border-radius: 1rem;
+        box-sizing: border-box;
+        height: 222px;
+        width: 100%;     
+    }
+
+    &__content {
+        
+    }
+
+    &__facilities {
+        
+    }
+}

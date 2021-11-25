@@ -1,0 +1,29 @@
+import React from 'react'
+import './card.scss'
+import Button from '../Button'
+
+const Card = () => {
+    return (
+        <div className='card__container'>
+            <div className='card__image'></div>
+            <div className='card__content'>
+                <h3>Nome do local</h3>
+                <ul className='card__facilities'>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                    <li className='card__facilities--item'></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <Button>Como chegar</Button>
+            </div>
+
+        </div>
+    )
+}
