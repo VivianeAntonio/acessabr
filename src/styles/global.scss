@@ -1,5 +1,6 @@
 @import '_colors';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import 'responsive';
 
 * {
     margin: 0;
@@ -35,7 +36,7 @@ body {
         width: 100%;
         max-width: 120rem;
         margin: 0 auto;
-        
+        padding: 0 15px;        
     }
 }
 
