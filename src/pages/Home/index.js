@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './styles.scss'
 import imageDestack from '../../images/imagem-destaque.png'
 import Pills from '../../components/Pills'
+import { useParams } from 'react-router-dom'
+import { LocationContext } from '../../contexts/LocationContext'
 
 
 const PLACES = [
@@ -16,14 +18,20 @@ const PLACES = [
     'Aquário'
 ]
 
-const SaoPaulo = propos => {
+const Home = () => {
+    const { city, state } = useParams()
+    const [ selectedPill, setSelectedPill ] = React.useState('')
+    const { setCity, setState } = useContext (LocationContext)
 
-    const [selectedPill, setSelectedPill] = React.useState('')
+    useEffect(() => {
+        setCity(city)
+        setState(state)
+    },[city, state])
 
     return (
         <main id="main-content" className="home__container">
             <div className="home__col">
-                <h1 className="home__title">{propos.city} para todos</h1>
+                <h1 className="home__title">{ city } para todos</h1>
 
                 <div className="home__image home__image--destack hide-desktop">
                     <img src={imageDestack} alt='Imagem destaque cadeirante'/>
@@ -62,4 +70,4 @@ const SaoPaulo = propos => {
     )
 }
 
-export default SaoPaulo;
+export default Home;
