@@ -16,7 +16,7 @@ const PLACES = [
     'Aquário'
 ]
 
-const Home = propos => {
+const SaoPaulo = propos => {
 
     const [selectedPill, setSelectedPill] = React.useState('')
 
@@ -62,4 +62,4 @@ const Home = propos => {
     )
 }
 
-export default Home;
+export default SaoPaulo;
