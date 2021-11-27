@@ -12,14 +12,12 @@ import iconPiso from '../../images/icon-piso-tatil.png'
 import iconPorta from '../../images/icon-porta-larga.png'
 import iconRampa from '../../images/icon-rampa.png'
 
-
-
-
 const Card = ({item}) => {
+    const imagePath = require ('../../images' + item.image)
     return (
         <div className='card__container'>
             <div className='card__image'>
-                <img src={item.image} alt={item.name} title={item.name}/>
+                <img src={imagePath} alt={item.name} title={item.name}/>
             </div>
             <div className='card__content'>
                 <h3>{item.name}</h3>
@@ -95,7 +93,7 @@ const Card = ({item}) => {
                     </li>
                 </ul>
                 <p>{item.description}.</p>
-                <Button>Como chegar</Button>
+                <a href={item.link} target='_blank' class='card__button button'>Como chegar</a>
             </div>
 
         </div>

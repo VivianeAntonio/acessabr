@@ -4,7 +4,9 @@
             "id": 1,
             "name": "Museu da Língua Portuguesa",
             "image": "/places/museu-da-lingua-portuguesa.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "category": "Museu",
+            "description": "Espaço criado para valorizar a diversidade da língua portuguesa, celebrá-la como elemento fundamental e fundador da cultura e aproximá-la dos falantes do idioma em todo o mundo",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
             "location": {
                 "lat": "-23.53494841186743",
                 "long": "-46.634468745327794"
@@ -19,14 +21,16 @@
                 { "item": 7, "status": true },
                 { "item": 8, "status": true },
                 { "item": 9, "status": true },
-                { "item": 10, "status": true }
+                { "item": 10, "status": false }
             ]
         },
         {
             "id": 2,
             "name": "Auditório do Ibirapuera",
             "image": "/places/auditorio-ibirapuera.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "category": "Teatro",
+            "description": "O Auditório Ibirapuera é um edifício concebido por Oscar Niemeyer para apresentações de espetáculos musicais, situado no Parque do Ibirapuera, em São Paulo, Brasil",
+            "link": "https://parqueibirapuera.org/equipamentos-parque-ibirapuera/auditorio-do-ibirapuera/",
             "location": {
                 "lat": "",
                 "long": ""
@@ -48,7 +52,9 @@
             "id": 3,
             "name": "Mercado Municipal",
             "image": "/places/mercado-municipal.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "category": "Mercado",
+            "description": "Visita obrigatória para turistas de todo o Brasil e de outros países, o Mercado Municipal Paulistano é um dos mais tradicionais pontos gourmet da cidade",
+            "link": "https://portaldomercadao.com.br/",
             "location": {
                 "lat": "",
                 "long": ""
@@ -68,9 +74,11 @@
         },
         {
             "id": 4,
-            "name": "MASP - Museu de Artes de São Paulo",
+            "name": "Museu de Artes de São Paulo",
             "image": "/places/masp.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "category": "Museu",
+            "description": "O MASP é um museu privado sem fins lucrativos, fundado em 1947 pelo empresário e mecenas Assis Chateaubriand (1892-1968), tornando-se o primeiro museu moderno no país",
+            "link": "https://masp.org.br/",
             "location": {
                 "lat": "",
                 "long": ""
@@ -91,8 +99,10 @@
         {
             "id": 5,
             "name": "Parque da Independência",
-            "image": "/places/",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "image": "/places/parque-independencia.png",
+            "category": "Parque",
+            "description": "Inaugurado em 1989, nas margens do córrego do bairro do Ipiranga, faz parte do patrimônio histórico cultural brasileiro devido ao Grito da Independência do país, ali proclamada por D. Pedro I",
+            "link": "https://www.prefeitura.sp.gov.br/cidade/secretarias/meio_ambiente/parques/regiao_sul/index.php?p=5747",
             "location": {
                 "lat": "",
                 "long": ""
@@ -112,9 +122,11 @@
         },
         {
             "id": 6,
-            "name": "Pinacoteca",
-            "image": "/places/",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "name": "Pinacoteca de São Paulo",
+            "image": "/places/pinacoteca.png",
+            "category": "Museu",
+            "description": "A Pinacoteca de São Paulo é um museu de artes visuais com ênfase na produção brasileira do século XIX até a contemporaneidade e em diálogo com as culturas do mundo",
+            "link": "http://pinacoteca.org.br/",
             "location": {
                 "lat": "",
                 "long": ""

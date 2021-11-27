@@ -14,7 +14,7 @@ function Slider () {
 
     useEffect (() => {
         const fetchPlaces = async () => {
-            const result = await api.get(`/places?category=${filteredPlaces}`)
+            const result = await api.get(`/places?category_like=${filteredPlaces}`)
 
             if (result.status === 200) {
                 setPlaces(result.data)
@@ -27,7 +27,7 @@ function Slider () {
         <Swiper 
             breakpoints={{
                 300: {
-                    slidesPerView: 1
+                    slidesPerView: 1    
                 },
                 767:{
                    slidesPerView: 2 
