@@ -24,39 +24,28 @@ function Slider () {
     }, [filteredPlaces])
 
     return (
-        <Swiper slidesPerView={1}
+        <Swiper 
             breakpoints={{
+                300: {
+                    slidesPerView: 1
+                },
                 767:{
-                    slidesPerView: 2
+                   slidesPerView: 2 
                 },
                 1024: {
                     slidesPerView: 4
                 }
             }}
         >
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <Card/>
-            </SwiperSlide>            
+            {
+                places.map(item =>(
+                    <SwiperSlide key={item.id}>
+                        <Card key={item.id} item={item}/>
+                    </SwiperSlide> 
+                ))
+                
+            }
+                                
             
         </Swiper>
     )
