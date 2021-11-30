@@ -2,16 +2,15 @@ import React from 'react'
 import { BrowserRouter as Router, Routes as Switch, Route } from "react-router-dom";
 import Home from "../pages/Home"
 import { LocationContext } from "../contexts/LocationContext";
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import Header from '../components/Header'
 import { FilterContext } from '../contexts/FilterContext';
 import Places from '../components/Places';
 import CuratorItem from '../components/Curator';
-import { Fragment } from 'react/cjs/react.production.min';
 
-const Routes = () => {
-    const [city, setCity] = React.useState ('')
-    const [state, setState] = React.useState ('')
+const Routes = props => {
+    const [city, setCity] = useState ('')
+    const [state, setState] = useState ('')
     const [ filteredPlace, setFilteredPlace] = useState('')
     return (
         <FilterContext.Provider value={{filteredPlace, setFilteredPlace}}>
