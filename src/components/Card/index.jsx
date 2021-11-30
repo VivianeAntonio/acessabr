@@ -17,7 +17,7 @@ const Card = ({item}) => {
     return (
         <div className='card__container'>
             <div className='card__image'>
-                <img src={imagePath} alt={item.name} title={item.name}/>
+                <img src={imagePath.default} alt={item.name} title={item.name}/>
             </div>
             <div className='card__content'>
                 <h3>{item.name}</h3>
