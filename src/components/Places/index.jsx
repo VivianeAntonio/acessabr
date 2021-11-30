@@ -5,13 +5,13 @@ import './places.scss'
 
 
 const Places = () => {
-    const { filteredPlaces, setFilteredPlaces } = useContext(FilterContext)
+    const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
      
     return (
         <section className='places'>
             <div className='places__header'>
                 <h2 className='places__title'> 
-                {filteredPlaces.length ? filteredPlaces + ' ' : 'Locais '}
+                {filteredPlace ? filteredPlace + ' ' : 'Locais '}
                 
                 <span>acessíveis</span></h2>
                 <div className='places__select'>

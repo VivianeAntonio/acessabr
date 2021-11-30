@@ -6,22 +6,22 @@ import Card from '../Card'
 import 'swiper/swiper-bundle.css'
 import api from '../../config/api'
 
-SwiperCore.use(Pagination)
+SwiperCore.use([Pagination])
 
 function Slider () {
-    const { filteredPlaces, setFilteredPlaces } = useContext(FilterContext)
+    const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
     const [places, setPlaces] = useState([])
 
     useEffect (() => {
         const fetchPlaces = async () => {
-            const result = await api.get(`/?category_like=${filteredPlaces}`)
+            const result = await api.get(`?category_like=${filteredPlace ? filteredPlace : ''}`)
 
             if (result.status === 200) {
                 setPlaces(result.data.places)
             }
         }
         fetchPlaces()        
-    }, [filteredPlaces])
+    }, [filteredPlace])
 
     return (
         <Swiper 

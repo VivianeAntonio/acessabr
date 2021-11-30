@@ -12,9 +12,9 @@ import { Fragment } from 'react/cjs/react.production.min';
 const Routes = () => {
     const [city, setCity] = React.useState ('')
     const [state, setState] = React.useState ('')
-    const [ filteredPlaces, setFilteredPlaces] = useState('')
+    const [ filteredPlace, setFilteredPlace] = useState('')
     return (
-        <FilterContext.Provider value={{filteredPlaces, setFilteredPlaces}}>
+        <FilterContext.Provider value={{filteredPlace, setFilteredPlace}}>
             <LocationContext.Provider value={{city, setCity, state, setState}}>
                 <Header/>
                 

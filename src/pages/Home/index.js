@@ -18,14 +18,14 @@ const PLACES = [
 const Home = () => {
     const { city, state } = useParams()
     const { setCity, setState } = useContext (LocationContext)
-    const { filteredPlaces, setFilteredPlaces } = useContext(FilterContext)
+    const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
 
     const handleFilterPlace = (item) => {
-        if (item !== filteredPlaces) {
-            setFilteredPlaces(item)
+        if (item !== filteredPlace) {
+            setFilteredPlace(item)
         }
        if (item === 'Todos') {
-           setFilteredPlaces('')
+           setFilteredPlace('')
        }
     }
 
@@ -55,7 +55,7 @@ const Home = () => {
 
                             <Pills
                                 local={item}
-                                selected={filteredPlaces === item}
+                                selected={filteredPlace === item}
                                 onClick={ () => handleFilterPlace(item) }
                             />
                             
